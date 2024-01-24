@@ -1,48 +1,50 @@
 ﻿using System.Windows;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace MahAppsIntroduction.Withit;
 
-public partial class MainWindow : Window
+public partial class MainWindow : MetroWindow
 {
     public MainWindow()
     {
         InitializeComponent();
     }
 
-    public void OpenDialogAndDisplayText(string? inputtext = "Hello Mrs. Ungerer :)")
+    public async Task OpenDialogAndDisplayText(string? inputtext = "Hello Mrs. Ungerer :)")
     {
         if (!string.IsNullOrEmpty(inputtext))
         {
-            MessageBox.Show(inputtext, "Attentione!");
+            await this.ShowMessageAsync("Attentione!", inputtext);
         }
     }
 
-    private void btn_clickme_tab1(object sender, RoutedEventArgs e)
+    private async void btn_clickme_tab1(object sender, RoutedEventArgs e)
     {
-        OpenDialogAndDisplayText();
+        await OpenDialogAndDisplayText();
     }
 
-    private void btn_orclickme_tab1(object sender, RoutedEventArgs e)
+    private async void btn_orclickme_tab1(object sender, RoutedEventArgs e)
     {
-        OpenDialogAndDisplayText(txtbox.Text);
+        await OpenDialogAndDisplayText(txtbox.Text);
     }
 
-    private void btn_clickme_tab2(object sender, RoutedEventArgs e)
-    {
-        OpenDialogAndDisplayText();
+    private async void btn_clickme_tab2(object sender, RoutedEventArgs e)
+    { 
+        await OpenDialogAndDisplayText();
     }
 
-    private void btn_orclickme_tab2(object sender, RoutedEventArgs e)
+    private async void btn_orclickme_tab2(object sender, RoutedEventArgs e)
     {
-        OpenDialogAndDisplayText(txtbox.Text);
+        await OpenDialogAndDisplayText(txtbox.Text);
     }
-    private void btn_clickme_tab3(object sender, RoutedEventArgs e)
+    private async void btn_clickme_tab3(object sender, RoutedEventArgs e)
     {
-        OpenDialogAndDisplayText();
+        await OpenDialogAndDisplayText();
     }
 
-    private void btn_orclickme_tab3(object sender, RoutedEventArgs e)
+    private async void btn_orclickme_tab3(object sender, RoutedEventArgs e)
     {
-        OpenDialogAndDisplayText(txtbox.Text);
+        await OpenDialogAndDisplayText(txtbox.Text);
     }
 }
