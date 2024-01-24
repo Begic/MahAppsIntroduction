@@ -15,7 +15,7 @@ public partial class MainWindow : MetroWindow
     {
         if (!string.IsNullOrEmpty(inputtext))
         {
-            await this.ShowMessageAsync("Attentione!", inputtext);
+            await this.ShowMessageAsync("Attention!", inputtext);
         }
     }
 

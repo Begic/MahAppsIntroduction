@@ -13,7 +13,7 @@ public partial class MainWindow : Window
     {
         if (!string.IsNullOrEmpty(inputtext))
         {
-           MessageBox.Show(inputtext, "Attentione!");
+           MessageBox.Show(inputtext, "Attention!");
         }
     }
 
