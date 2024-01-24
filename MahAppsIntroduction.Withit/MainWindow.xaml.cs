@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace MahAppsIntroduction.Without;
+namespace MahAppsIntroduction.Withit;
 
 public partial class MainWindow : Window
 {
@@ -13,7 +13,7 @@ public partial class MainWindow : Window
     {
         if (!string.IsNullOrEmpty(inputtext))
         {
-           MessageBox.Show(inputtext, "Attentione!");
+            MessageBox.Show(inputtext, "Attentione!");
         }
     }
 
