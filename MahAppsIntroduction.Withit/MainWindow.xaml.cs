@@ -11,7 +11,7 @@ public partial class MainWindow : MetroWindow
         InitializeComponent();
     }
 
-    public async Task OpenDialogAndDisplayText(string? inputtext = "Hello Mrs. Ungerer :)")
+    public async Task OpenDialogAndDisplayText(string? inputtext = "Hello Mrs. Ungerer-Lagger :)")
     {
         if (!string.IsNullOrEmpty(inputtext))
         {

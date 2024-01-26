@@ -9,7 +9,7 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    public void OpenDialogAndDisplayText(string? inputtext = "Hello Mrs. Ungerer :)")
+    public void OpenDialogAndDisplayText(string? inputtext = "Hello Mrs. Ungerer-Lagger :)")
     {
         if (!string.IsNullOrEmpty(inputtext))
         {
